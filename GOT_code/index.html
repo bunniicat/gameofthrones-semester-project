@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css">
+    <title>Character Select</title>
+  </head>
+  <body>
+    <div class="header">
+      <div id="selectedMatch"></div>
+      <div><h1>[ Game of matches [</h1>
+        <h2 id="instructions">[ Help Jon Snow swipe right on the future love of his life [</h2></div>
+      <div><button id="instr-btn-char">?</button></div>
+    </div>
+
+    <div  id="popup" class="popup">
+      <div id="popupInfo" class="popupContent bounceIn">
+      </div>
+    </div>
+
+    <div id="instructionsCharacter" class="popup">
+      <div id="instructionsInfo" class="popupContent popupContentChar bounceIn">
+        <span id="closeCharX">close &#10008;</span>
+        <img src="resources/symbols/instructions-board.png" alt="game play instructions">
+      </div>
+    </div>
+
+    <div class="profile">
+      <div class="profile-card" onclick="getInfo(1346)">
+        <img src="resources/f-profile/Drogo.svg" alt="drogo avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(271)">
+        <img src="resources/f-profile/DaenerysTargaryen.svg" alt="daeny avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(1445)">
+        <img src="resources/f-profile/GreyWorm.svg" alt="grey wrom avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(743)">
+        <img src="resources/f-profile/Melisandre.svg" alt="melisandre avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(148)">
+        <img src="resources/f-profile/AryaStark.svg" alt="arya stark avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(957)">
+        <img src="resources/f-profile/SansaStark.svg" alt="sansa stark avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(16)">
+        <img src="resources/f-profile/MargaeryTyrell.svg" alt="margaery tyrell avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(823)">
+        <img src="resources/f-profile/PeterBaelish.svg" alt="peter baelish avatar">
+      </div>
+      <div class="profile-card" onclick="getInfo(238)">
+        <img src="resources/f-profile/CerceiLannister.svg" alt="cercei avatar">
+      </div>
+    </div>
+
+    <script src="scripts/character.js"></script>
+  </body>
+</html>
